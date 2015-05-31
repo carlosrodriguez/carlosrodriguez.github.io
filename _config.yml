@@ -25,6 +25,3 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
-
-gems:
-- soundcloud_sound
