@@ -25,3 +25,6 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Additional Files
+include: CNAME
