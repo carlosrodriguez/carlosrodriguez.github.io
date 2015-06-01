@@ -35,19 +35,7 @@ module Jekyll
     end
 
     def render(context)
-      case @sound[:widget]
-
-      when "html5"
-        "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" src=\"http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F#{@sound[:id]}&show_artwork=true\"></iframe>"
-      when "flash"
-        "<object height=\"81\" width=\"100%\"><param name=\"movie\" value=\"https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F#{@sound[:id]}&amp;show_comments=false&amp;auto_play=false&amp;color=#{@sound[:color]}\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed allowscriptaccess=\"always\" height=\"81\" src=\"https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F#{@sound[:id]}&amp;show_comments=false&amp;auto_play=false&amp;color=#{@sound[:color]}\" type=\"application/x-shockwave-flash\" width=\"100%\"></embed></object>"
-      when "mini"
-        "<object height=\"18\" width=\"100%\"><param name=\"movie\" value=\"https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F#{@sound[:id]}&amp;auto_play=false&amp;player_type=tiny&amp;font=Arial&amp;color=#{@sound[:color]}\"></param> <param name=\"allowscriptaccess\" value=\"always\"></param> <param name=\"wmode\" value=\"transparent\"></param><embed wmode=\"transparent\" allowscriptaccess=\"always\" height=\"18\" src=\"https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F#{@sound[:id]}&amp;auto_play=false&amp;player_type=tiny&amp;font=Arial&amp;color=#{@sound[:color]}\" type=\"application/x-shockwave-flash\" width=\"100%\"></embed></object>"
-      when "artwork"
-        "<object height=\"#{dimension}\" width=\"#{dimension}\"><param name=\"movie\" value=\"https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F#{@sound[:id]}&amp;auto_play=false&amp;player_type=artwork&amp;color=#{@sound[:color]}\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed allowscriptaccess=\"always\" height=\"220\" src=\"https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F#{@sound[:id]}&amp;auto_play=false&amp;player_type=artwork&amp;color=#{@sound[:color]}\" type=\"application/x-shockwave-flash\" width=\"220\"></embed></object>"
-      else
-        ""
-      end
+      "<iframe width=\"100%\" height=\"20\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/#{@sound[:id]}&amp;color=616f7c&amp;inverse=true&amp;auto_play=false&amp;show_user=true\"></iframe>"
     end
 
     private
