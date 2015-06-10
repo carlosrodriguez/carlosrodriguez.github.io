@@ -26,7 +26,7 @@ and (max-width : 736px) {
 and (min-width : 319px)
 and (max-width : 560px) {
   body {
-    background-position: -480px 10px;
+    background-position: -498px 10px;
   }
 }
 
